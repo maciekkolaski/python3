@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+import my_class
 def main():
-	pass
+	a = my_class.Maciek("dupa")
+	print(a.x)	
 
 if __name__ == "__main__":
 	main()
