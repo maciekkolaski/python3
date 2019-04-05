@@ -2,7 +2,7 @@
 import my_class
 def main():
 	a = my_class.Maciek("dupa")
-	print(a.x)	
+	a.dress()	
 
 if __name__ == "__main__":
 	main()
