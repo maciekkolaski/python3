@@ -6,6 +6,14 @@ class Prostokat:
 class Kwadrat(Prostokat):
 	def __init__(self, a):
 		super().__init__(a, a)
+class Prostopadloscian(Prostokat):
+	def __init__(self, a, b, c):
+		super().__init__(a, b)
+		self.c = c
 if __name__ == "__main__":
 	prostokat_1 = Kwadrat(2)	
 	print(prostokat_1.a, prostokat_1.b)
+	prostokat_2 = Prostokat(10, 5)
+	print(prostokat_2.a, prostokat_2.b)
+	prostopadloscian_1 = Prostopadloscian(1, 2, 3)
+	print(prostopadloscian_1.a, prostopadloscian_1.b, prostopadloscian_1.c)
