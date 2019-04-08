@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+class Prostokat:
+	def __init__(self, a, b):
+		self.a = a	
+		self.b = b	
+class Kwadrat(Prostokat):
+	def __init__(self, a):
+		super().__init__(a, a)
+if __name__ == "__main__":
+	prostokat_1 = Kwadrat(2)	
+	print(prostokat_1.a, prostokat_1.b)
